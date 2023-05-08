@@ -1,6 +1,10 @@
 package br.com.fundamentosjava.JavaOOP.ClasseData;
 public class Data {
-    String dia;
-    String mes;
-    String ano;
+    int dia;
+    int mes;
+    int ano;
+
+     public void defineData(){
+         System.out.println("A data é: " + dia + "/" + mes + "/" + ano);
+     }
 }
