@@ -1,4 +1,4 @@
-package br.com.fundamentosjava.fundamentos;
+package br.com.fundamentosjava.Fundamentos;
 
 import java.util.Random;
 import java.util.Scanner;

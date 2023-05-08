@@ -1,6 +1,5 @@
-package br.com.fundamentosjava.fundamentos;
+package br.com.fundamentosjava.Fundamentos;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class MediaSalario {

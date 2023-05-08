@@ -1,4 +1,4 @@
-package br.com.fundamentosjava.fundamentos;
+package br.com.fundamentosjava.Fundamentos;
 
 public class NumeroPrimoV2 {
     public static void main(String[] args) {
