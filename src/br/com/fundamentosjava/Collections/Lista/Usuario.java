@@ -1,12 +1,18 @@
-package br.com.fundamentosjava.Collections.EqualseHash;
+package br.com.fundamentosjava.Collections.Lista;
 
 import java.util.Objects;
 
 public class Usuario {
     String nome;
 
-    Usuario(String nomeUsuario) {
-        this.nome = nomeUsuario;
+    Usuario(String nome) {
+        this.nome = nome;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Meu nome é " + this.nome + ".";
     }
 
     @Override

@@ -2,9 +2,9 @@ package br.com.fundamentosjava.Collections.EqualseHash;
 
 public class EqualeHashCode {
     public static void main(String[] args) {
-        Usuario u1 = new Usuario("Lucas","skjdhajs@hotmail.com");
+        Usuario u1 = new Usuario("Lucas");
 
-        Usuario u2 = new Usuario("Lucas","skjdhajs@hotmail.com");
+        Usuario u2 = new Usuario("Lucas");
 
 
         System.out.println(u1 == u2);
