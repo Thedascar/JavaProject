@@ -9,7 +9,7 @@ public class CalculoTeste2 {
 
         calc = (x,y) -> x * y;
 
-        System.out.println(calc.executar(4.0,3.0));
+        System.out.println(calc.executar(2.0,3.0));
 
     }
 }
