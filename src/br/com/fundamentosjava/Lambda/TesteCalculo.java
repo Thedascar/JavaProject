@@ -9,6 +9,6 @@ public class TesteCalculo {
 
 
         System.out.println(soma.executar(10.0,10.0));
-        System.out.println(multiplicacao.executar(10.0,10.0));
+        System.out.println(multiplicacao.executar(12.0,10.0));
     }
 }
