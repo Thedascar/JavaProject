@@ -8,25 +8,25 @@ public class TesteCarro {
     public static void main(String[] args) {
 
 
-        Carro l = new Lamborgine(300);
-        Carro p = new Palio(100);
+        Lamborgine l = new Lamborgine(300);
+        Palio p = new Palio(150);
 
-        l.velocidadeAtualAltera(50);
-        p.velocidadeAtualAltera(50);
+        l.setVelocidaAtual(30);
+        p.setVelocidaAtual(30);
 
+        l.ligarTurbo();
         l.acelerar();
         l.acelerar();
         l.acelerar();
-        l.frear();
         l.acelerar();
 
 
-        System.out.println("A velocidade atual da L é: " + l.velocidadeConsulta());
+        System.out.println("A velocidade atual da L é: " + l.getVelocidaAtual());
+
 
         p.acelerar();
         p.acelerar();
         p.acelerar();
-        p.frear();
         p.acelerar();
         p.acelerar();
         p.acelerar();
@@ -34,6 +34,8 @@ public class TesteCarro {
         p.acelerar();
         p.acelerar();
         p.acelerar();
-        System.out.println("A velocidade atual do P é: " + p.velocidadeConsulta());
+
+
+        System.out.println("A velocidade atual do P é: " + p.getVelocidaAtual());
     }
 }

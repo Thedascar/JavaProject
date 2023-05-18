@@ -1,32 +1,33 @@
 package br.com.fundamentosjava.JavaOOP.Heranca.Desafio;
 
-public class Carro {
+public abstract class Carro {
 
      public final int VELOCIDADE_MAXIMA;
      protected int velocidaAtual;
+
+     protected int delta = 20;
 
     public Carro(int velocidaMaxima){
         this.VELOCIDADE_MAXIMA = velocidaMaxima;
     }
 
 
-    public int velocidadeAtualAltera(int velocidade){
-        this.velocidaAtual = velocidade;
-        return this.velocidaAtual;
+    public int getVelocidaAtual() {
+        return velocidaAtual;
     }
 
-    public int velocidadeConsulta(){
-        return this.velocidaAtual;
+    public void setVelocidaAtual(int velocidaAtual) {
+        this.velocidaAtual = velocidaAtual;
     }
 
-     public int acelerar() {
+    public int acelerar() {
 
         if (velocidaAtual < VELOCIDADE_MAXIMA) {
-            velocidaAtual += 10;
-        }else{
-            velocidaAtual = VELOCIDADE_MAXIMA;
+            velocidaAtual += delta;
+        } else {
+            velocidaAtual = VELOCIDADE_MAXIMA - this.delta;
         }
-        return velocidaAtual;
+        return 0;
     }
 
      public int frear() {

@@ -1,6 +1,6 @@
 package br.com.fundamentosjava.JavaOOP.Polimorfismo;
 
-public class Comida {
+public abstract class Comida {
     private static double peso;
 
     public Comida(double peso){
@@ -13,7 +13,7 @@ public class Comida {
 
     public void setPeso(double peso) {
         if(peso > 0){
-            this.peso = peso;
+            Comida.peso = peso;
         }
     }
 }
