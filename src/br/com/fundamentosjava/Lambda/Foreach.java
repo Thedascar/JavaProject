@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Foreach {
     public static void main(String[] args) {
-        List<String> aprovados = Arrays.asList("Ana","Sus","Lia","Gui");
+        List<String> aprovados = Arrays.asList("Giu","Ana","Sus","Lia","Gui");
 
         System.out.println("Tadicional");
         for (String nome: aprovados) {
