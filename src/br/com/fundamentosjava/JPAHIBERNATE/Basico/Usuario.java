@@ -1,9 +1,9 @@
 package br.com.fundamentosjava.JPAHIBERNATE.Basico;
 
-
-
 import org.hibernate.annotations.Entity;
 import org.hibernate.annotations.NaturalId;
+
+
 @Entity
 public class Usuario {
 
