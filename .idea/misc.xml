@@ -6,10 +6,13 @@
       <list>
         <option value="$PROJECT_DIR$/JavaModular/pom.xml" />
         <option value="$PROJECT_DIR$/app.calculo/pom.xml" />
+        <option value="$PROJECT_DIR$/HeadFirstJava/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/HeadFirstJava/pom.xml" />
         <option value="$PROJECT_DIR$/JavaModular/pom.xml" />
         <option value="$PROJECT_DIR$/app.calculo/pom.xml" />
       </set>
