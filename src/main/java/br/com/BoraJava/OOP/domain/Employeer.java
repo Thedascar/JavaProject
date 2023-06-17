@@ -14,38 +14,35 @@ public class Employeer {
         this.salary = salary;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getAge() {
-        return age;
     }
 
     public void setAge(int age) {
         this.age = age;
     }
 
-    public double getSalary() {
-        return salary;
-    }
-
     public void setSalary(double salary) {
         this.salary = salary;
     }
 
-
-    public void printEmployeer(String name,int age,double... salary){
+    public void printEmployeer(String name, int age, double... salary){
         double total = 0;
-        for (double s : salary){
-            total += s;
+
+        if(name != null && name != "" && age > 0){
+            for (double b: salary){
+                if(b > 0){
+                    total += b;
+                }else{
+                   return;
+                }
+            }
+        }else{
+            System.out.println("Algo deu errado");
+            return;
         }
         double avg = total / salary.length;
-
         System.out.printf("My name is %s and im %d , my average payment is R$: %.2f \n",name,age,avg);
     }
-}
+  }
+
