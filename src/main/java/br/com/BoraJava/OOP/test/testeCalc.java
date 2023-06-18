@@ -19,7 +19,13 @@ public class testeCalc {
         res.sum();
         System.out.println();
 
-        double resSub = res.sub(10,2);
+        double resSub = res.sub(10, 2);
         System.out.println("The sub is : " + resSub);
+
+        System.out.println();
+
+        res.a(10,10);
+        res.a("10","10");
+
     }
 }

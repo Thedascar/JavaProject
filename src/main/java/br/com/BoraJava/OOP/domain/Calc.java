@@ -47,4 +47,13 @@ public class Calc {
         }
         System.out.println(total);
     }
+
+
+    public void a(double a,double b){
+        System.out.println(a + b);
+    }
+
+    public void a(String a,String b){
+        System.out.println(a + b);
+    }
 }
