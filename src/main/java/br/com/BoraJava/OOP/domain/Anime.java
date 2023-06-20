@@ -22,8 +22,6 @@ public class Anime {
 
     public Anime(String nome, String place, String lang,int [] episode) {
         this(nome,place);
-        this.name = nome;
-        this.place = place;
         this.lang = lang;
         this.episode = episode;
     }
@@ -32,11 +30,9 @@ public class Anime {
         return name;
     }
 
-
     public String getPlace() {
         return place;
     }
-
 
     public String getLang() {
         return lang;
