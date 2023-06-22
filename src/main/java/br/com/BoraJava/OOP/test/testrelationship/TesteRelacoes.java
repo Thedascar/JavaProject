@@ -42,9 +42,7 @@ public class TesteRelacoes {
         professorJose.setSeminarios(sql);
 
         java.imprime();
-
         springboot.imprime();
-
         sql.imprime();
 
 
