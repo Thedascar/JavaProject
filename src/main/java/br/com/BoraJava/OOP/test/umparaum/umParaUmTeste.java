@@ -1,7 +1,7 @@
 package br.com.BoraJava.OOP.test.umparaum;
 
-import br.com.BoraJava.OOP.domain.umparaum.Avatar;
-import br.com.BoraJava.OOP.domain.umparaum.Player;
+import br.com.BoraJava.OOP.domain.onetoone.Avatar;
+import br.com.BoraJava.OOP.domain.onetoone.Player;
 
 public class umParaUmTeste {
     public static void main(String[] args) {

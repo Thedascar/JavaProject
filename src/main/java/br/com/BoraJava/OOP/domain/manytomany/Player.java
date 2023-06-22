@@ -1,4 +1,4 @@
-package br.com.BoraJava.OOP.domain.muitosparaum;
+package br.com.BoraJava.OOP.domain.manytomany;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package br.com.BoraJava.OOP.test.muitosparaum;
 
-import br.com.BoraJava.OOP.domain.muitosparaum.Avatar;
-import br.com.BoraJava.OOP.domain.muitosparaum.Player;
+import br.com.BoraJava.OOP.domain.manytomany.Avatar;
+import br.com.BoraJava.OOP.domain.manytomany.Player;
 
 import java.util.ArrayList;
 import java.util.List;

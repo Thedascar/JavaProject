@@ -1,4 +1,4 @@
-package br.com.BoraJava.OOP.domain.umparaum;
+package br.com.BoraJava.OOP.domain.onetoone;
 public class Player {
     private String nome;
     private Avatar avatar;
