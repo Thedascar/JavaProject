@@ -1,7 +1,4 @@
 package br.com.BoraJava.Excecoes.runtimetest;
-
-import br.com.fundamentosjava.Collections.Fila.FilaJava;
-
 import java.io.File;
 import java.io.IOException;
 
