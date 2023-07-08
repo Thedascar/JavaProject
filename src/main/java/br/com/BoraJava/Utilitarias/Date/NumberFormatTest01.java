@@ -1,6 +1,7 @@
 package br.com.BoraJava.Utilitarias.Date;
 
 import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.Locale;
 
 public class NumberFormatTest01 {
@@ -21,6 +22,13 @@ public class NumberFormatTest01 {
             System.out.println(numberFormat.format(valor));
         }
 
+        String valorString = "1,000.2130";
+
+        try {
+            System.out.println(nfa[0].parse(valorString));
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 }

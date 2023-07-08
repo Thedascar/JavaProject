@@ -1,10 +1,11 @@
 package br.com.BoraJava.Utilitarias.Date;
 
 import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.Locale;
 
 public class NumberFormatTest02 {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Locale localeEUA = new Locale("en","EUA");
         Locale localeJP = Locale.JAPAN;
         Locale localeIT = Locale.ITALY;
@@ -15,10 +16,19 @@ public class NumberFormatTest02 {
         nfa[2] = NumberFormat.getCurrencyInstance(localeJP);
         nfa[3] = NumberFormat.getCurrencyInstance(localeIT);
 
-        double valor = 100_000_000.2130;
+        double valor = 10_000_000.2130;
 
         for (NumberFormat numberFormat : nfa) {
+            numberFormat.setMaximumFractionDigits(2);
             System.out.println(numberFormat.format(valor));
+        }
+
+        String valorString = "1000.2130";
+
+        try {
+            System.out.println(nfa[0].parse(valorString));
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
         }
 
 
