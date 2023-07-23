@@ -2,7 +2,7 @@ package br.com.ReinforcingJava.Collections.dominio;
 
 import java.util.Objects;
 
-public class CellPhone {
+public class SmartPhone {
     private String serialNumber;
     private String marca;
 
@@ -22,7 +22,7 @@ public class CellPhone {
         this.marca = marca;
     }
 
-    public CellPhone(String serialNumber, String marca) {
+    public SmartPhone(String serialNumber, String marca) {
         this.serialNumber = serialNumber;
         this.marca = marca;
 
@@ -30,10 +30,18 @@ public class CellPhone {
     }
 
     @Override
+    public String toString() {
+        return "SmartPhone{" +
+                "serialNumber='" + serialNumber + '\'' +
+                ", marca='" + marca + '\'' +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof CellPhone cellPhone)) return false;
-        return Objects.equals(getSerialNumber(), cellPhone.getSerialNumber()) && Objects.equals(getMarca(), cellPhone.getMarca());
+        if (!(o instanceof SmartPhone smartPhone)) return false;
+        return Objects.equals(getSerialNumber(), smartPhone.getSerialNumber()) && Objects.equals(getMarca(), smartPhone.getMarca());
     }
 
     @Override

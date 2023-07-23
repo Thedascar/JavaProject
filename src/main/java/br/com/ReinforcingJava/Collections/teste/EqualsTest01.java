@@ -1,16 +1,16 @@
 package br.com.ReinforcingJava.Collections.teste;
 
-import br.com.ReinforcingJava.Collections.dominio.CellPhone;
+import br.com.ReinforcingJava.Collections.dominio.SmartPhone;
 
 public class EqualsTest01 {
     public static void main(String[] args) {
 
-        CellPhone cellPhone1 = new CellPhone("ASZ45","IPhone");
-        CellPhone cellPhone2 = new CellPhone("ASZ4555","IPhone");
+        SmartPhone smartPhone1 = new SmartPhone("ASZ45","IPhone");
+        SmartPhone smartPhone2 = new SmartPhone("ASZ4555","IPhone");
 
-        System.out.println(cellPhone1.hashCode());
-        System.out.println(cellPhone2.hashCode());
-        System.out.println(cellPhone1.equals(cellPhone2));
+        System.out.println(smartPhone1.hashCode());
+        System.out.println(smartPhone2.hashCode());
+        System.out.println(smartPhone1.equals(smartPhone2));
 
     }
 }
