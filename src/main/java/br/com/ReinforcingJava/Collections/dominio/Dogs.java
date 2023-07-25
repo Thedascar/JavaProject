@@ -2,9 +2,16 @@ package br.com.ReinforcingJava.Collections.dominio;
 
 import java.util.Objects;
 
-public class Dogs {
+public class Dogs implements Comparable<Dogs> {
     private Long id;
     private String nomeDog;
+
+    @Override
+    public int compareTo(Dogs o) {
+
+        return this.id.compareTo(o.getId());
+    }
+
 
     public Dogs(Long id, String nomeDog) {
         this.id = id;
