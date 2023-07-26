@@ -5,6 +5,7 @@ import java.util.Objects;
 public class Dogs implements Comparable<Dogs> {
     private Long id;
     private String nomeDog;
+    private int quantidade;
 
     @Override
     public int compareTo(Dogs o) {
@@ -12,6 +13,11 @@ public class Dogs implements Comparable<Dogs> {
         return this.id.compareTo(o.getId());
     }
 
+
+    public Dogs(Long id, String nomeDog, int quantidade) {
+        this(id,nomeDog);
+        this.quantidade = quantidade;
+    }
 
     public Dogs(Long id, String nomeDog) {
         this.id = id;
@@ -23,7 +29,16 @@ public class Dogs implements Comparable<Dogs> {
         return "Dogs{" +
                 "id=" + id +
                 ", nomeDog='" + nomeDog + '\'' +
+                ", quantidade=" + quantidade +
                 '}';
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
     @Override
