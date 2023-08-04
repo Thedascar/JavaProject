@@ -6,4 +6,8 @@ public class AnimeComparator {
     public static int compareByTitle(Anime a1, Anime a2) {
         return a1.getTitulo().compareTo(a2.getTitulo());
     }
+    public int compareByEpisodesNonStatic(Anime a, Anime b){
+        return Integer.compare(a.getEpisodios(),b.getEpisodios());
+
+    }
 }
