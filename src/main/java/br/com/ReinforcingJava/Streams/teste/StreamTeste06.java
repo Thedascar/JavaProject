@@ -4,10 +4,9 @@ import br.com.ReinforcingJava.Streams.dominio.LightNovel;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.Optional;
 
-public class StreamTest03 {
+public class StreamTeste06 {
     private static List<LightNovel> lightNovels =
             List.of(
                     new LightNovel("Tensei Shitta",8.99),
@@ -17,20 +16,22 @@ public class StreamTest03 {
                     new LightNovel("FullMetalAlchemist",9.54),
                     new LightNovel("Kumo Desuga",1.45),
                     new LightNovel("Monogatari",3.45),
-                     new LightNovel("Monogatari",3.45)
+                    new LightNovel("Monogatari",3.45)
             );
     public static void main(String[] args) {
-        Stream<LightNovel> stream = lightNovels.stream();
-        lightNovels.stream()
-               .forEach(System.out::println);
 
-        System.out.println("------------------------------");
-        long count = stream.filter(e -> e.getPreco() < 4.0).count();
-        long count2 = lightNovels.stream()
-                .distinct()
-                .filter(e -> e.getPreco() < 4.0).count();
-        System.out.println(count);
-        System.out.println(count2);
+        System.out.println(lightNovels.stream().anyMatch(l -> l.getPreco() > 8));
+        System.out.println(lightNovels.stream().allMatch(l -> l.getPreco() > 0));
+        System.out.println(lightNovels.stream().noneMatch(l -> l.getPreco() < 8));
+
+        lightNovels.stream().filter(l -> l.getPreco() > 3)
+                .findAny()
+                .ifPresent(System.out::println);
+
+        lightNovels.stream().filter(l -> l.getPreco() > 2).min(Comparator.comparing(LightNovel::getPreco))
+                .ifPresent(System.out::println);
+
+
 
     }
 }
