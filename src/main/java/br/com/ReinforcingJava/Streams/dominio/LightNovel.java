@@ -5,13 +5,28 @@ import java.util.Objects;
 public class LightNovel {
     private String nome;
     private Double preco;
+    private Category category;
 
+
+    public LightNovel(String nome, Double preco, Category category) {
+        this.nome = nome;
+        this.preco = preco;
+        this.category = category;
+    }
 
     public LightNovel(String nome, Double preco) {
         this.nome = nome;
         this.preco = preco;
     }
 
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 
     @Override
     public boolean equals(Object o) {
