@@ -1,4 +1,4 @@
-package br.com.ReinforcingJava.Concorrencia;
+package br.com.ReinforcingJava.Concorrencia.teste;
 
 
 import java.util.concurrent.atomic.AtomicInteger;
